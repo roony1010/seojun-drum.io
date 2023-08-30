@@ -1,33 +1,24 @@
-document.addEventListener('keydown', playSound);
-
-function playSound(event) {
-  const keyCode = event.keyCode;
-  const audioElement = document.querySelector(`audio[data-key="${keyCode}"]`);
-  const drumPad = document.querySelector(`.drum-pad[data-key="${keyCode}"]`);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drum Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="drum-container">
+    <div class="drum-pad" data-key="65">
+      Q
+      <audio data-key="65" src="sounds/kick.wav"></audio>
+    </div>
+    <div class="drum-pad" data-key="83">
+      S
+      <audio data-key="83" src="sounds/snare.wav"></audio>
+    </div>
+    <!-- Add more drum-pad elements for other sounds -->
+  </div>
   
-  if (audioElement) {
-    audioElement.currentTime = 0; // Reset audio to the beginning
-    audioElement.play();
-    drumPad.classList.add('playing');
-  }
-}
-
-const drumPads = document.querySelectorAll('.drum-pad');
-drumPads.forEach(drumPad => {
-  drumPad.addEventListener('transitionend', removeTransition);
-  drumPad.addEventListener('click', function () {
-    const keyCode = drumPad.getAttribute('data-key');
-    const audioElement = document.querySelector(`audio[data-key="${keyCode}"]`);
-
-    if (audioElement) {
-      audioElement.currentTime = 0; // Reset audio to the beginning
-      audioElement.play();
-      drumPad.classList.add('playing');
-    }
-  });
-});
-
-function removeTransition(event) {
-  if (event.propertyName !== 'transform') return;
-  this.classList.remove('playing');
-}
+  <script src="script.js"></script>
+</body>
+</html>
