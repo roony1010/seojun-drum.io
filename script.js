@@ -1,6 +1,7 @@
 // Import Howler.js library - Make sure to include the Howler.js script in your HTML
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-
+import {Howl, Howler} from 'howler';
+const {Howl, Howler} = require('howler');
 const drumPads = document.querySelectorAll('.drum-pad');
 
 drumPads.forEach(drumPad => {
