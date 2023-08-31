@@ -1,1 +1,0 @@
-# seojun-drum.io
