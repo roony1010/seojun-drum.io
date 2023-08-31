@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function playSound(index) {
     const sound = new Howl({
-      src: [`sounds/${index}.wav`], // Replace with your sound file extensions
+      src: [`sounds/kick.wav`], // Replace with your sound file extensions
     });
 
     sound.play();
