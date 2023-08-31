@@ -26,7 +26,6 @@ body {
   margin: 10px;
   cursor: pointer;
 }
-/* ... Your existing styles ... */
 
 .drum-pad.playing {
   background-color: #ff9900; /* Change color when playing */
