@@ -28,6 +28,6 @@ body {
 }
 
 .drum-pad.playing {
-  background-color: #ff9900; /* Change color when playing */
+  background-color: #4aaa8d8; /* Change color when playing */
   transform: scale(1.05); /* Add a slight scale effect when playing */
 }
