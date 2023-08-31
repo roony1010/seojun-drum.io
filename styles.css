@@ -15,7 +15,7 @@ body {
 
 .drum-pad {
   width: 200px;
-  height: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,9 +25,32 @@ body {
   border-radius: 8px;
   margin: 10px;
   cursor: pointer;
+  position: relative;
+  user-select: none;
 }
 
 .drum-pad.playing {
   background-color: #ff9900; /* Change color when playing */
   transform: scale(1.05); /* Add a slight scale effect when playing */
+}
+
+.drum-pad:before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  background-color: #555;
+  bottom: 5%;
+  left: 5%;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.drum-pad[data-key="kick"]:before {
+  background-color: #00aaff; /* Kick drum color */
+}
+
+.drum-pad[data-key="snare"]:before {
+  background-color: #ffcc00; /* Snare drum color */
 }
