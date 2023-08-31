@@ -20,8 +20,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function playSound(index) {
+    let soundFile;
+    
+    if (index === 'kick') {
+      soundFile = 'sounds/kick.wav';
+    } else if (index === 'snare') {
+      soundFile = 'sounds/snare.wav';
+    }
+    
     const sound = new Howl({
-      src: [`sounds/kick.wav`], // Replace with your sound file extensions
+      src: [soundFile],
     });
 
     sound.play();
