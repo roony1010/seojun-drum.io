@@ -46,7 +46,7 @@ h1 {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('IMG_0340.jpg'), url('seojunbear.jpg'); /* Specify the URL of your background image */
+  background-image: url('seojunrainbow.jpg'), url('seojunbear.jpg'); /* Specify the URL of your background image */
   background-size: 50%, 50%; /* Adjust the size percentage as needed */
   background-repeat: no-repeat, no-repeat; /* Prevent the image from repeating */
   background-position: left, right;
