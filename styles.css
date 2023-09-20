@@ -46,17 +46,22 @@ h1 {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('seojunrainbow.jpg'), url('seojunbear.jpg'), url('seojunpaint.jpg'), url('seojundrum.jpg'); /* Specify the URL of your background image */
-  background-size: 25%, 25%, 25%, 25%; /* Adjust the size percentage as needed */
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; /* Prevent the image from repeating */
+  background-image: url('seojunrainbow.jpg'), url('seojunbear.jpg'), url('seojunpaint.jpg'), url('seojundrum.jpg');
+  /* Specify the URL of your background images */
+  background-size: 25% 25%, 25% 25%, 25% 25%, 25% 25%;
+  /* Adjust the size percentage as needed, separated by commas */
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
   background-position: top-left, bottom-left, top-right, bottom-right;
-  margin: 0, 0, 0, 0;
-  padding: 0, 0, 0, 0;
-  display: flex, flex, flex, flex;
-  flex-direction: column, column, column, column;
-  align-items: center, center, center, center;
-  justify-content: center, center, center, center;
-  height: 100vh, 100vh, 100vh, 100vh;
+  /* Position each image accordingly, separated by commas */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
+
 
 
