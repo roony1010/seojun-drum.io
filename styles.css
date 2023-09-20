@@ -49,7 +49,7 @@ body {
   background-image: url('seojunrainbow.jpg'), url('seojunbear.jpg'); /* Specify the URL of your background image */
   background-size: 50%, 50%; /* Adjust the size percentage as needed */
   background-repeat: no-repeat, no-repeat; /* Prevent the image from repeating */
-  background-position: left, right;
+  background-position: top, bottom;
   margin: 0, 0;
   padding: 0, 0;
   display: flex, flex;
