@@ -59,7 +59,7 @@ body {
     url('seojunbear.jpg'), 
     url('seojunpaint.jpg'), 
     url('seojundrum.jpg');
-  background-size: 25%, 25%, 25%, 25%;
+  background-size: 100%, 100, 100%, 100%;
   background-repeat: no-repeat;
   background-position: top left, bottom left, top right, bottom right;
 }
