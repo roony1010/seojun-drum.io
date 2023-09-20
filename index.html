@@ -10,11 +10,6 @@
 <body>
   <h1>Seojun's Drum</h1>
   
-  <div class="image-row">
-    <img src="seojundrum.jpg" alt="seojundrum">
-    <img src="seojunbear.jpg" alt="seojunbear">
-    <img src="seojunpaint.jpg" alt="seojunpaint">
-  </div>
   
   <div class="drum-container">
     <div class="drum-pad" data-key="snare">
@@ -24,7 +19,14 @@
       Kick
     </div>
   </div>
+
   
+  <!-- Music Player -->
+  <audio id="musicPlayer" controls>
+    <source src="Alan Menken - A Whole New World (minus 3).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <script src="script.js"></script>
 </body>
 </html>
